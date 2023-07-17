@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: radial-gradient(
+      circle closest-corner at center 500px,
+      #f3f3f3,
+      rgb(0, 0, 0) 90%
+    )
+    no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: antiquewhite;
+  text-align: center;
+}
+#appName {
+  font-style: italic;
+  border: 1px black;
+  width: 20%;
+  text-decoration: underline;
+  margin-left: 40%;
+  background-color: #f3f3f3;
+  color: gray;
+}
+
+/*________________SuperHero List Style_______________________*/
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style-type: none;
+  border-radius: 40px;
+  position: absolute;
+  top: 25%;
+  bottom: 0px;
+  overflow-y: scroll;
+  text-align: center;
+  justify-content: space-evenly;
+}
+/*________________SuperHero Item List Style__________________*/
+li {
+  color: #f3f3f3;
+  width: 350px;
+  height: 370px;
+  background: radial-gradient(
+      circle closest-corner at center 200px,
+      #ffffff,
+      rgb(92, 98, 216) 70%
+    )
+    no-repeat;
+  /* border-radius: 50%; */
+  border: thick double #09445c;
+  display: inline-flex;
+  overflow: hidden;
+  flex-shrink: 3;
+  margin: 20px 20px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+li img {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+  border-radius: 50%;
+  animation-name: shine;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shine {
+  0%,
+  100% {
+    box-shadow: 0px 82px -12px rgba(189, 42, 17, 0.1);
+  }
+  50% {
+    box-shadow: 0px 0px 82px -12px rgba(189, 42, 17, 0.685);
+  }
+}
+
+li #heroTitle {
+  font-size: 1.4em;
+  color: #09445c;
+  margin-top: 20px;
+  text-align: center;
+}
+li #heroTitle:hover {
+  cursor: none;
+  font-size: larger;
+}
+li #delete,
+#details {
+  color: rgb(100, 8, 8);
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 60%;
+  height: fit-content;
+  width: fit-content;
+}
+li #delete:hover,
+#details:hover {
+  color: rgb(31, 30, 34);
+  font-size: large;
+  transition-delay: 2000ms;
+  transition-property: all;
+  text-decoration: underline;
+  transition-delay: 1s, 300ms;
+  transition-property: text-decoration, background-color;
+  cursor: pointer;
+}
+/*________________ScrollBar Style_______________________*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  padding: 20px; /* display: none; */
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  padding: 20px;
+  display: none;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(196, 62, 62);
+  border-radius: 10px;
+  padding: 20px;
+}

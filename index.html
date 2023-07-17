@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHero Hunter</title>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 id="appName">Super-Hero Hunters </h1>
+    <hr>
+    <br>
+    
+    <!-- search-bar container on home Page -->
+    <div id="container">
+        
+        <input placeholder="Enter the name of SuperHeroHunter" class="search" id="inputBar" value>
+        <div id = "btnContainer">
+         
+            <button id="clear" class="btn">Clear</button>
+            
+            <button id="favourite" class="btn">Favourites</button>
+        </div>
+
+    </div>
+    
+    <!-- used to display error message on homepage if there is any issue  -->
+    <div id="errorMessage">
+    </div>
+
+    <!-- used to render the list of hero which was the result of the output seacrh context  -->
+    <ul id="heroList">
+   
+    </ul>
+
+
+
+  
+    <script type="text/javaScript" src="index.js"></script>
+</body>
+</html>
